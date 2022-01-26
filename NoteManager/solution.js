@@ -1,8 +1,6 @@
-const form = document.querySelector("#add");
 const input = document.querySelector("#add-input");
 const addButton = document.querySelector("#add-btn");
 const ul = document.querySelector('#list');
-
 const li = document.createElement('li');
 
 
@@ -19,4 +17,10 @@ addButton.addEventListener("click", function (e) {
     console.log(li);
     ul.appendChild(li);
   }
+});
+
+
+// Addボタンを押したら内容をクリアにする
+addButton.addEventListener("click", function() {
+  input.value = ''
 });
